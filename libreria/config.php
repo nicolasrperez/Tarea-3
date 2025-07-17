@@ -1,12 +1,18 @@
 <?php
-//define ('DB_HOST','localhost');
-define ('DB_HOST','localhost');
-define ('DB_USER','root');
-define ('DB_PASS','');
-define ('DB_NAME','biblio_t1');
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'biblio_t1');
 
+function conectar() {
+    $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    if ($conn->connect_error) {
+        die('Error de conexión: ' . $conn->connect_error);
+    }
+    return $conn;
+}
 
-// Nombre de la session (puede dejar este mismo)
-$usuarios_sesion="pwd";
-
-
+function formatDate($date) {
+    return date('g:i a', strtotime($date));
+}
+?>
