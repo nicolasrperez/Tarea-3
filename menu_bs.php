@@ -38,6 +38,21 @@ if (session_status() === PHP_SESSION_NONE) {
       opacity: 0.6;
       filter:alpha(opacity=80);
     }
+     .navbar2 {
+  background-color: #252850 !important; 
+  border-color: #252850 !important;    
+}
+
+.navbar2 .navbar-brand,
+.navbar2 .nav > li > a {
+  color: #ecf0f1 !important; 
+}
+
+.navbar2 .navbar-brand:hover,
+.navbar2 .nav > li > a:hover {
+  color: #00aae4 !important;
+  background-color: transparent !important;
+}
   </style>
 </head>
 
