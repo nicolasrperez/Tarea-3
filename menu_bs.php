@@ -49,7 +49,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <a class="navbar-brand" href="index.php">
       <img src="images/b_bkg_3.jpg" alt="Logo"
            style="display:inline; height:30px; margin-right:8px;">
-      Lautaro Baez
+      Nicolas Perez
     </a>
 
     <div class="navbar-header">
